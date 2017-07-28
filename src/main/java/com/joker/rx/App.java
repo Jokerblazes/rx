@@ -12,6 +12,7 @@ import com.joker.rx.observer.Subscriber;
  */
 public class App {
 	public static void main(String[] args) {
+		//this is test
 //		Observable.create(new Observable.OnSubscribe() {
 //			public void call(Subscriber subscriber) {
 //				subscriber.onNext("hello");
