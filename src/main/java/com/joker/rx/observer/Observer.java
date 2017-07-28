@@ -6,5 +6,5 @@ public interface Observer<T> {
 	//事件队列完结
 	public void onCompleted();
 	//事件队列异常(事件处理异常时调用)
-	public void onError();
+	public void onError(Throwable e);
 }

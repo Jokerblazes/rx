@@ -35,10 +35,6 @@ public final class OperatorSubscribeOn<T> implements OnSubscribe<T> {
 						subscriber.onCompleted();
 					}
 
-					public void onError() {
-						subscriber.onError();
-					}
-
 					@Override
 					public void onStart() {
 						subscriber.onStart();
@@ -47,6 +43,10 @@ public final class OperatorSubscribeOn<T> implements OnSubscribe<T> {
 					@Override
 					public void unsubscribe() {
 						subscriber.unsubscribe();
+					}
+
+					public void onError(Throwable e) {
+						
 					}
 				};
 				source.subscribe(s);
